@@ -3158,7 +3158,7 @@
 
 	      var icon = this.options.showButtonIcons ? this.options.filterControlVisible ? this.options.icons.filterControlSwitchHide : this.options.icons.filterControlSwitchShow : '';
 	      var text = this.options.showButtonText ? this.options.filterControlVisible ? this.options.formatFilterControlSwitchHide() : this.options.formatFilterControlSwitchShow() : '';
-	      this.$toolbar.find('>.columns').find('.filter-control-switch').html("".concat(Utils$1.sprintf(this.constants.html.icon, this.options.iconsPrefix, icon), " ").concat(text));
+	      this.$toolbar.find('>.columns').find('.btn[name="filterControlSwitch"]').html("".concat(Utils$1.sprintf(this.constants.html.icon, this.options.iconsPrefix, icon), " ").concat(text));
 	    }
 	  }]);
 
